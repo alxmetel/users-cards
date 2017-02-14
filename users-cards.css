@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#sidebar {
+    position: fixed;
+    z-index: 2;
+    top:0;
+    right:0;
+    width: 150px;
+    height:100%;
+    background: #666666;
+    padding-top: 50px;
+}
+
+/*С благодарностью спёрто отсюда: http://codepen.io/RRoberts/pen/ZBYaJr*/
+
+.hamburger .line{
+	width: 50px;
+	height: 5px;
+	background-color: #ecf0f1;
+	display: block;
+	margin: 8px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+	cursor: pointer;
+}
+
+.is-active .line:nth-child(1),
+#hamburger.is-active .line:nth-child(3){
+	width: 40px;
+}
+
+#hamburger.is-active .line:nth-child(1){
+	-webkit-transform: translateX(-10px) rotate(-45deg);
+	-ms-transform: translateX(-10px) rotate(-45deg);
+	-o-transform: translateX(-10px) rotate(-45deg);
+	transform: translateX(-10px) rotate(-45deg);
+}
+
+#hamburger.is-active .line:nth-child(3){
+	-webkit-transform: translateX(-10px) rotate(45deg);
+	-ms-transform: translateX(-10px) rotate(45deg);
+	-o-transform: translateX(-10px) rotate(45deg);
+	transform: translateX(-10px) rotate(45deg);
+}
+
+
+#menu {
+	height: 100%;
+	width: 150px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #e0dede;
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.menuItems {
+	display: block;
+	padding: 10px;
+	padding-top: 30px;
+}
+
+.checkboxModule {
+	display: block;
+	margin: 20px 5px;
+	font-size: 1.2em;
+}
+
+.checkboxModule label {
+	cursor: pointer;
+	margin-left: 3px;
+}
+
+#content {
+	position: relative;
+	width: auto;
+	overflow: auto;
+	margin-right: 300px;
+	padding-left: 10px
+}
+
+.card {
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	border: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 20px;
+	padding: 10px 20px;
+	background-color: #f7f7f7;
+}
+
+.module {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+	
+}
+
+.photo {
+	width: 35px;
+	height: 35px;
+	float: left;
+}
+
+.text {
+	width: 180px;
+	height: 25px;
+	margin-left: 20px;
+	margin-top: 5px;
+	padding: 0 5px;
+	border: none;
+	border-bottom: 1px solid grey;
+	background-color: #f7f7f7;
+}
+
+.moduleOccupation {
+	display: inline-block;
+	width: 206px;
+	height: 50px;
+	margin-top: 10px;
+	float: right;
+}
+
+.selectOccupation {
+	width: 180px;
+	height: 25px;
+	margin-top: 5px;
+	border: none;
+	border-bottom: 1px solid grey;
+	background-color: #f7f7f7;
+}
