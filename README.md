@@ -1,5 +1,7 @@
 # users-cards
-Задание 5 на курсе "Java Script Advanced" в школе ITEA.<br>
+Task #5 within the course "Java Script Advanced" in IT Education Academy (ITEA)
+<br>
+<b>Please go to https://alxmetel.github.io/users-cards/ to view the project live</b>
 <br>
 Реализовать Менеджер карточек клиентов.<br>
 1. Справа должна быть фиксированная панель с кнопкой Меню;<br>
